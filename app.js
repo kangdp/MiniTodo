@@ -14,6 +14,7 @@ App({
     if(isLogin){
       this.globalData.userInfo = wx.getStorageSync('userInfo')
     }
+    
     if (wx.canIUse('getUpdateManager')) {
       const updateManager = wx.getUpdateManager()
       updateManager.onCheckForUpdate(function (res) {
