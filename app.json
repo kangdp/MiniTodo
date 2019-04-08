@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/todo/index",
+    "pages/done/index",
+    "pages/my/index",
+    "pages/login/index",
+    "pages/add/index",
+    "pages/edit/index",
+    "pages/register/index",
+    "pages/about/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#0091ea",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/todo/index",
+        "text": "待办事项",
+        "iconPath": "images/ic_todo_list_gray.png",
+        "selectedIconPath": "images/ic_todo_list_light.png"
+      },
+      {
+        "pagePath": "pages/done/index",
+        "text": "已完成",
+        "iconPath": "images/ic_done_list_gray.png",
+        "selectedIconPath": "images/ic_done_list_light.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "images/ic_my_gray.png",
+        "selectedIconPath": "images/ic_my_light.png"
+      }
+    ]
+  }
+}

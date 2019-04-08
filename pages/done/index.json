@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "已完成",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "component-status-view": "/common/statusview/index"
+  }
+}

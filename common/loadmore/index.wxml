@@ -1,0 +1,8 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-loadmore">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips" style='color: #cdd3d3'>正在加载</view>
+        </view>
+    </view>
+</view>

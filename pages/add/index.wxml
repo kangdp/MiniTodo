@@ -1,0 +1,63 @@
+<!--pages/edit/index.wxml-->
+
+<view class='title-wrap'>
+  <text class='title'>标题:</text>
+  <input class='title-input' placeholder-class='title-input-placeholder' placeholder='必填' bindinput='bindTitleInput'></input>
+</view>
+
+<view class='divider'/>
+
+<view class='content-wrap'>
+ <text class='content'>详情:</text>
+ <textarea class='content-input' placeholder-class='content-input-placeholder' placeholder='非必填' maxlength='1000' bindinput='bindContentInput'></textarea>
+</view>
+
+ <view class='divider'/>
+
+
+ <view class='priority-wrap'>
+  <text class='priority'>优先级:</text>
+  <radio-group bindchange="bindPriorityChange">
+    <radio checked='true' color='#0091ea' value='0'>一般</radio>
+    <radio color='#0091ea' value='1'>重要</radio>
+  </radio-group>
+</view>
+
+<view class='divider'/>
+
+
+
+<view class='date-wrap'>
+  <text class='date'>日期:</text>
+  <text class='date' bindtap='bindSelDate'>{{year + '-' + month  + '-' + day}}</text>
+</view>
+
+<view class='divider'/>
+
+<button class='save' hover-class='hover-save' bindtap='bindCommit'>保存</button>
+
+
+<action-sheet hidden='{{actionSheetHidden}}' bindchange='bindActionSheetChange'>
+
+
+<action-sheet-item>
+   <picker-view
+    indicator-style="height: 50px;"
+    value="{{value}}"
+    bindchange="bindChange"
+  >
+    <picker-view-column>
+      <view wx:for="{{years}}" wx:key="this" style="line-height: 50px">{{item}}年</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{months}}" wx:key="this" style="line-height: 50px">{{item}}月</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{days}}" wx:key="this" style="line-height: 50px">{{item}}日</view>
+    </picker-view-column>
+  </picker-view>
+  </action-sheet-item>
+</action-sheet>
+
+<action-sheet hidden="false">
+  </action-sheet>

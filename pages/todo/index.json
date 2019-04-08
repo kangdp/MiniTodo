@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "待办事项",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "component-status-view": "/common/statusview/index"
+  }
+}

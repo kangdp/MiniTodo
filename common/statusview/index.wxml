@@ -1,0 +1,7 @@
+<!--component/statusview/statusview.wxml-->
+
+<view class='status-root' hidden='{{!statusShow}}'>
+  <view class='status'>
+    <text class='status-text'>{{statusText}}</text>
+  </view>
+</view>

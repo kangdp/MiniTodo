@@ -1,0 +1,55 @@
+/* pages/register/index.wxss */
+
+.top {
+  width: 100%;
+  margin-top: 250rpx;
+}
+.input {
+  color: #333;
+  font-size: 28rpx;
+  margin-bottom: 50rpx;
+  border: 3rpx solid #e6e6e6;
+  border-top: 0rpx;
+  border-left: 0rpx;
+  border-right: 0rpx;
+  margin-left: 100rpx;
+  margin-right: 100rpx
+}
+
+
+.input-focus {
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 50rpx;
+  border: 3rpx solid #0091ea;
+  border-top: 0rpx;
+  border-left: 0rpx;
+  border-right: 0rpx;
+  margin-left: 100rpx;
+  margin-right: 100rpx
+}
+
+.placeholder-input {
+  color: #e6e6e6;
+  font-size: 30rpx
+}
+
+
+button {
+  font-size: 30rpx;
+  color: #0091ea;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  margin-top: 50rpx;
+  background: white;
+  border: 3rpx solid #0091ea;
+}
+.btn-hover {
+   font-size: 30rpx;
+  color: white;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  margin-top: 50rpx;
+  background: #e6e6e6;
+  border: 3rpx solid #e6e6e6;
+}

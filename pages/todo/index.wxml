@@ -1,0 +1,45 @@
+<!--index.wxml-->
+
+<wxs module='utils' src='../../wxs/util.wxs' />
+
+<view class='header'>
+
+  <view class='tabbar'>
+    <text class='{{curIndex == 0 ? "tab-active" : "tab-nomal"}}' bindtap='bindTab' data-index='0'>全部</text>
+    <text class='{{curIndex == 1 ? "tab-active" : "tab-nomal"}}' bindtap='bindTab' data-index='1'>工作</text>
+    <text class='{{curIndex == 2 ? "tab-active" : "tab-nomal"}}' bindtap='bindTab' data-index='2'>学习</text>
+    <text class='{{curIndex == 3 ? "tab-active" : "tab-nomal"}}' bindtap='bindTab' data-index='3'>生活</text>
+    <view class='img-add-wrap' bindtap='bindToAdd'>
+      <image class='img-add' src='/images/ic_add.png' />
+    </view>
+    
+  </view>
+  <view class='header-divider' />
+</view>
+
+
+<view class='body' wx:if='{{showData}}'>
+  <view class='list-item' wx:for="{{todoList}}" wx:key="this">
+    <view class='item-header'>
+      <text class='start-time'>{{utils.parseDate(item.date)}}</text>
+    </view>
+    <view class='header-divider2' />
+    <view wx:for="{{item.datas}}" wx:key="this" bindtap='bindItem' data-item='{{item}}'>
+      <view class='item-title-wrap' >
+        <text class='item-title'>{{item.title}}</text>
+        <view class='img-edit-wrap' catchtap='bindEdit' data-id = '{{item.id}}'>
+        <image class='img-edit'  src='/images/ic_edit_light.png' />
+        </view>
+        <text wx:if='{{item.priority == 1}}' class='mark'>重要</text>
+      </view>
+        <text class='item-content'>{{item.content}}</text>
+      <view class='divider'/>
+    </view>
+  </view>
+ 
+ <view hidden='{{!showLoadMore}}'>
+  <include src='/common/loadmore/index.wxml'/>
+ </view>
+</view>
+<component-status-view status-show="{{!showData}}"  status-text="暂无数据">
+</component-status-view>

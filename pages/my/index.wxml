@@ -1,0 +1,28 @@
+<!--pages/my/index.wxml-->
+
+<view class='header'>
+
+  <view class='userinfo' hidden='{{!isLogin}}'>
+
+    <open-data class="userAvatarUrl" type="userAvatarUrl"></open-data>
+     <open-data class="userNickName" type="userNickName"></open-data>
+  </view>
+
+  <view class='userinfo' hidden='{{isLogin}}'>
+    <image src='/images/ic_avatar_default.png'/>
+    <text bindtap='bindToLogin'>登录/注册</text> 
+  </view>
+
+</view>
+
+
+  <view class='menuItem' bindtap='bindToUs'>
+    <image src='/images/ic_about_us.png'/>
+    <text>关于我们</text>
+    <image class='img-arrow' src='/images/ic_arrow.png'></image>
+  </view>
+  <view class='divider'/>
+
+   <view class='exit' wx:if='{{isLogin}}' bindtap='bindExit'>
+    <text>退出账号</text>
+  </view>

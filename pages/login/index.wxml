@@ -1,0 +1,29 @@
+<!--pages/login/index.wxml-->
+
+
+<view class='header'>
+  <text class='title'>T O D O</text>
+</view>
+
+<view class='desc-wrap'>
+  <text class='desc'>让生活变得井井有条</text>
+</view>
+
+<view class='user'>
+  <view class='{{nameFocus? "name-wrap-focus" : "name-wrap"}}'>
+    <image src='{{nameFocus? "/images/ic_account_light.png":"/images/ic_account_gray.png"}}'/>
+    <input class='user-input' placeholder-class='user-placeholder-input' placeholder='用户名' bindfocus='onfocus' bindblur='onblur' data-focus-value='name' bindinput='onNameInput'></input>
+  </view>
+      
+  <view class='{{pswFocus? "psw-wrap-focus" : "psw-wrap"}}'>
+    <image src='{{pswFocus? "/images/ic_psw_light.png" : "/images/ic_psw_gray.png"}}'/>
+    <input class='user-input' placeholder-class='user-placeholder-input' placeholder='密码' bindfocus='onfocus' bindblur='onblur'  data-focus-value='psw' bindinput='onPswInput' password='true'></input>
+  </view>
+</view>
+
+
+
+<button hover-class='btn-hover' bindtap='bindToMain'>登录</button>
+<view class='bottom'>
+<text bindtap='bindToRegister'>没有帐号？去注册</text>
+</view>

@@ -1,0 +1,121 @@
+/* pages/login/index.wxss */
+
+.header {
+  width: 100%;
+  margin-top: 100rpx;
+  display: flex;
+  align-items: center;
+}
+
+.header image {
+  width: 45rpx;
+  height: 45rpx;
+  margin-left: 100rpx
+}
+
+.title {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 60rpx;
+  color: black;
+  margin-left: 100rpx
+}
+.desc-wrap {
+  margin-top: 20rpx;
+  margin-left: 100rpx;
+}
+.desc {
+  font-size: 35rpx;
+  color: #0091ea
+}
+
+
+.user {
+  margin-top: 300rpx;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+}
+.name-wrap{
+  display: flex;
+  align-items: center;
+  border: 3rpx solid #e6e6e6;
+  border-top: 0rpx;
+  border-left: 0rpx;
+  border-right: 0rpx;
+  padding-bottom: 3rpx
+}
+.name-wrap-focus {
+  display: flex;
+  align-items: center;
+  border: 3rpx solid #0091ea;
+  border-top: 0rpx;
+  border-left: 0rpx;
+  border-right: 0rpx;
+  padding-bottom: 3rpx
+}
+.user image {
+  width: 35rpx;
+  height: 35rpx;
+}
+.user-placeholder-input {
+  font-size: 28rpx;
+  color: #e6e6e6;
+  margin-left: 5rpx
+}
+.user-input {
+  width: 100%;
+  font-size: 28rpx;
+  color: #0091ea;
+  margin-left: 5rpx;
+}
+
+
+.psw-wrap {
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+  border: 3rpx solid #e6e6e6;
+  border-top: 0rpx;
+  border-left: 0rpx;
+  border-right: 0rpx;
+  padding-bottom: 3rpx
+}
+
+.psw-wrap-focus{
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+  border: 3rpx solid #0091ea;
+  border-top: 0rpx;
+  border-left: 0rpx;
+  border-right: 0rpx;
+  padding-bottom: 3rpx
+}
+
+button {
+  font-size: 30rpx;
+  color: #0091ea;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  margin-top: 50rpx;
+  background: white;
+  border: 3rpx solid #0091ea;
+}
+.btn-hover {
+   font-size: 30rpx;
+  color: white;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  margin-top: 50rpx;
+  background: #e6e6e6;
+  border: 3rpx solid #e6e6e6;
+}
+
+.bottom{
+  display: flex;
+  justify-content: center;
+  margin-top: 15rpx;
+}
+.bottom text {
+  font-size: 22rpx;
+  color: #0091ea
+}

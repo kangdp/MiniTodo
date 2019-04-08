@@ -1,0 +1,13 @@
+<!--pages/register/index.wxml-->
+<view class='body'>
+
+
+<view class='top'>
+<input class='{{nameFocus ? "input-focus" : "input"}}' bindinput='bindInputUserName'  placeholder='用户名' placeholder-class='placeholder-input' bindfocus='onfocus' bindblur='onblur' data-focus-value='name'></input>
+<input class='{{pswFocus ? "input-focus" : "input"}}' bindinput='bindInputPsw' password='true' placeholder='密码' placeholder-class='placeholder-input' bindfocus='onfocus' bindblur='onblur' data-focus-value='psw'></input>
+<input class='{{repswFocus ? "input-focus" : "input"}}' bindinput='bindInputRePsw' password='true' placeholder='再次输入密码' placeholder-class='placeholder-input' bindfocus='onfocus' bindblur='onblur' data-focus-value='repsw'></input>
+</view>
+
+<button bindtap='register' hover-class='btn-hover'>注册</button>
+
+</view>

@@ -1,0 +1,22 @@
+<!--pages/about/index.wxml-->
+
+
+<view class='header'>
+
+<view class='wrap'>
+<image src='/images/icon.png'/>
+<text>Wandroid Todo</text>
+<text>1.0.1</text>
+</view>
+</view>
+
+
+<view class='body'>
+<text class='desc-title'>介绍</text>
+<text class='desc'>该项目是根据玩安卓网站的Todo Api开发的一款非常简洁、易用的清单管理小程序，用于随手记录想法以及待办事项的管理。</text>
+
+<text class='desc-web-title'>源码位置</text>
+<text class='desc'>由于个人小程序不支持外部链接，需要点击以下链接复制到剪切板上，然后在浏览器中打开</text>
+<text class='link' bindtap='copyText' data-text='{{link}}'>{{link}}</text>
+</view>
+

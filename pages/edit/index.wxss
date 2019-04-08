@@ -1,0 +1,3 @@
+/* pages/edit/index.wxss */
+
+@import "/pages/add/index.wxss";
