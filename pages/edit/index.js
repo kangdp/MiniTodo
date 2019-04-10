@@ -31,6 +31,7 @@ Page({
     days: days,
     value: [],
     actionSheetHidden: true,
+    showLoading: false
   },
   onLoad: function(options){
     that = this
@@ -132,8 +133,8 @@ Page({
  * 更新Todo
  */
   updateTodo: function () {
-    wx.showLoading({
-      title: '正在保存...',
+    this.setData({
+      showLoading: true
     })
     let date = this.data.year + '-' + this.data.month + '-' + this.data.day
     let params = {
@@ -153,8 +154,7 @@ Page({
         wx.showToast({
           title: '保存成功',
         })
-        //更新列表
-        // that.updateTodoList()
+
       },
       function (code, msg) {
 
@@ -162,12 +162,11 @@ Page({
           title: msg,
           icon: 'none'
         })
+      },function(){
+        that.setData({
+          showLoading: false
+        })
       })
   },
 
-  // updateTodoList: function(){
-  //   let pages = getCurrentPages()
-  //   let lastPage = pages[pages.length - 2]
-  //   lastPage.updateList()
-  // }
 })

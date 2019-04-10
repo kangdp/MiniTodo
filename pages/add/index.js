@@ -23,6 +23,7 @@ Page({
     day: date.getDate(),
     value: [],
     actionSheetHidden: true,
+    showLoading: false
   },
 
 
@@ -55,8 +56,8 @@ Page({
    * 新增Todo
    */
   addTodo: function() {
-    wx.showLoading({
-      title: '正在添加...',
+    this.setData({
+      showLoading: true
     })
     let date = this.data.year + '-'+ this.data.month + '-' + this.data.day
     
@@ -79,20 +80,16 @@ Page({
         })
       },
       function(code,msg){
-
         wx.showToast({
           title: msg,
           icon: 'none'
         })
+      },function(){
+        that.setData({
+          showLoading: false
+        })
       })
   },
-
-  // updateTodoList: function () {
-  //   let pages = getCurrentPages()
-  //   let lastPage = pages[pages.length - 2]
-  //   lastPage.updateList()
-  // },
-
 
   /**
    * 更新当前选中月份的总天数

@@ -34,14 +34,13 @@
   display: flex;
   padding-top: 20rpx;
   padding-bottom: 20rpx;
-  height: 300rpx
-
-
+  height: 300rpx;
 }
 .content {
   font-size: 34rpx;
   color: #333;
   margin-left: 40rpx;
+  line-height: 40rpx
 }
 .content-input {
   display: flex;
@@ -49,16 +48,14 @@
   color: #333;
   width: 580rpx;
   position: absolute;
-  top: 25rpx;
+  top: 0rpx;
+  margin-top: 20rpx;
   left: 140rpx;
-  max-height: 300
+  line-height: 38rpx;
 }
 .content-input-placeholder {
   font-size: 34rpx;
   width: 580rpx;
-  position: absolute;
-  top: 25rpx;
-  left: 140rpx;
 }
 .priority-wrap {
   height: 100rpx;

@@ -39,7 +39,7 @@
 
 <view class='divider'/>
 
-<button wx:if='{{status == 0}}' class='save' hover-class='hover-save' bindtap='bindCommit'>保存</button>
+<button wx:if='{{status == 0}}' class='save' hover-class='hover-save' bindtap='bindCommit' loading='{{showLoading}}'>保存</button>
 
 
 <action-sheet hidden='{{actionSheetHidden}}' bindchange='bindActionSheetChange'>
@@ -64,5 +64,3 @@
   </action-sheet-item>
 </action-sheet>
 
-<action-sheet hidden="false">
-  </action-sheet>

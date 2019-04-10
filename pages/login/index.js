@@ -10,6 +10,7 @@ Page({
   data: {
     nameFocus: false,
     pswFocus: false,
+    showLoading: false
   },
 
   onLoad: function (options) {
@@ -88,13 +89,15 @@ Page({
       return;
     }
 
+    this.setData({
+      showLoading: true
+    })
+
     let params = {
       username: username,
       password: password
     }
-    wx.showLoading({
-      title: '正在登录...',
-    })
+    
     utils.doRequest(
       'user/login',
       'POST',
@@ -114,6 +117,10 @@ Page({
         wx.showToast({
           title: msg,
           icon: 'none'
+        })
+      },function(){
+        that.setData({
+          showLoading: false
         })
       }
       )

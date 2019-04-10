@@ -23,7 +23,7 @@
 
 
 
-<button hover-class='btn-hover' bindtap='bindToMain'>登录</button>
+<button hover-class='btn-hover' bindtap='bindToMain' loading='{{showLoading}}'>登录</button>
 <view class='bottom'>
 <text bindtap='bindToRegister'>没有帐号？去注册</text>
 </view>
