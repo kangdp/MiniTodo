@@ -70,7 +70,7 @@ Page({
       day: day,
       status: status,
       priority: priority,
-      value: [year, month-1, day - 1]
+      value: [year - dateUtils.getCurDate().getFullYear(), month-1, day - 1]
     })
 
   },

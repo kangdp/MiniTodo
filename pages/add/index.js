@@ -34,7 +34,7 @@ Page({
     content = ''
     this.updateDays(this.data.year, this.data.month)
     this.setData({
-      value: [9999, date.getMonth(), date.getDate() - 1]
+      value: [0, date.getMonth(), date.getDate() - 1]
     })
   },
 

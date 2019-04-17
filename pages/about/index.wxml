@@ -6,7 +6,7 @@
 <view class='wrap'>
 <image src='/images/icon.png'/>
 <text>Wandroid Todo</text>
-<text>1.0.0</text>
+<text>1.0.2</text>
 </view>
 </view>
 
